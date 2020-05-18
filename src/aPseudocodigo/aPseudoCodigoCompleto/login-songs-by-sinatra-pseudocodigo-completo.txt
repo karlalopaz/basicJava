@@ -1,0 +1,27 @@
+Tener acceso la url de Songs by Sinatra
+- URL: http://songs-by-sinatra.herokuapp.com/
+
+Verificar que se encuentren los siguientes elementos:
+- title="Home"
+- title="About"
+- title="Contact"
+- title="Songs"
+- text: "Welcome to this website all about the songs of the great Frank Sinatra"
+- text: "log in"
+
+Dar click en Log In
+Verificar que se encuentren los siguientes elementos:
+- name="username"
+- name="password"
+- value="Log In"
+
+Llenar valor de username y passoword:
+Username: frank
+Passworkd: sinatra
+
+Dar click en Log In
+Verificar que se encuentren los siguientes elementos:
+- Text: "You are now logged in as frank"
+
+
+
