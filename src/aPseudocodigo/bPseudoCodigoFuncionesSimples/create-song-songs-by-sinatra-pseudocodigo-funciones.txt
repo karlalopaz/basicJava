@@ -49,13 +49,21 @@ validarCancionCreada() {
 }
 
 editarCancion() {
-
+  Verificar se encuentre el siguiente elemento: Texto: "edit this song"
+  Dar click en el boton edit this song
+  Verificar se encuentre el siguiente elemento: name= "song[title]" y name="song[length]"
+  modificar el valor de name="song[length]
+  dar click en "Save Song"
+  Verificar que se encuentre el siguiente elemento: texto: "Song successfully updated"
 }
 
 borrarCancion() {
-
+    dar click en el boton de "delete this song" value="delete this song"
+    verificar se encuentre el siguiente elemento: texto: "Song deleted"
 }
 
 likeCancion() {
-
+    crearCancion()
+    dar click en el boton de like value="like"
+    verificar se encuentre el siguiente elemento: texto: "This song has been liked once"
 }
