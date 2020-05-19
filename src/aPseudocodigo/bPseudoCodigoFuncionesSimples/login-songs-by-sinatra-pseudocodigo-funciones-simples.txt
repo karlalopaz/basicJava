@@ -1,0 +1,28 @@
+navegarURL() {
+    URL: http://evening-bastion-49392.herokuapp.com/
+    Browser: Chrome
+    Abrir el navegador
+    Ingresar la URL
+    Dar Enter
+}
+
+validarHomePage() {
+    Verificar que se encuentren los siguientes elementos:
+    text: "Welcome to this website all about the songs of the great Frank Sinatra"
+}
+
+hacerLogin() {
+    Dar click en Log In - texto: "log in"
+    Verificar que se encuentren los siguientes elementos:
+    - name="username"
+    - name="password"
+    - value="Log In"
+    Ingresar datos de username como "frank"
+    Ingresar datos de password como "sinatra"
+}
+
+validarLoginCorrecto() {
+    Verificar se encuentren los siguientes elementos:
+    texto: "You are now logged in as frank"
+}
+
