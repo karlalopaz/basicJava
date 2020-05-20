@@ -1,0 +1,21 @@
+navegar(JiraURL){
+abrir navegador
+ingresar string URL= "url.jira.com";
+dar enter
+}
+
+validarJiraHomePage() {
+
+}
+
+loginJira(user) {
+
+}
+
+navegarMenu(opcion) {
+
+}
+
+ingresarHoras(codigoProyecto, descripcion, periodo, fecha, horasL) {
+
+}

@@ -1,0 +1,11 @@
+navegar(salesforce url) {
+abrir navegador
+ingresar string URL= "test.salesforce.com";
+dar enter
+}
+
+loginSalesforce(user, password) {
+ingresar datos de usuario y password validos
+dar click en login
+validar que el texto "Business Admin" este en el DOM
+}
