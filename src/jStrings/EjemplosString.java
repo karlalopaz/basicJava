@@ -10,7 +10,7 @@ public class EjemplosString {
 
 		int numeroCaracteres = s.length();
 		for(int i = 0; i < numeroCaracteres; i++) {
-			Input.print("El caracter numero " + i +" de la frase " + s + " es " + s.charAt(i) + "\n");
+			Input.print("El caracter numero " + i +" de la frase '" + s + "' es '" + s.charAt(i) + "'\n");
 		}
 
 		
