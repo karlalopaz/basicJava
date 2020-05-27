@@ -43,21 +43,19 @@ public class minMonedas {
             residuo = rescambio % 25;
             //System.out.println("El residuo del cambio entre 25 es: " + residuo);
             if (residuo != 0){
-                int resdiez = 0;
-                int rescin = 0;
                 if(residuo>= 10)
                 {
                     int cambioD = residuo/10;
                     System.out.println("El total de monedas de 10c es: "+cambioD);
-                    resdiez = cambioD;
+                    residuo = (cambioD * 10) - residuo;
                 }
-                if(resdiez>=5)
+                if(residuo>=5)
                 {
                     int cambioC = residuo/5;
                     System.out.println("El total de monedas de 5c es: "+cambioC);
-                    rescin = cambioC;
+                    residuo = (cambioC * 5) - residuo;
                 }
-                if(rescin>=1)
+                if(residuo>=1)
                 {
                     int cambioO = residuo/1;
                     System.out.println("El total de monedas de 1c es: "+cambioO);
