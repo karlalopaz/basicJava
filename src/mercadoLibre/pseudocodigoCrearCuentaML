@@ -1,0 +1,33 @@
+navegarURL() {
+    URL: http://www.mercadolibre.com.mx/
+    Browser: Chrome
+    Abrir el navegador
+    Ingresar la URL
+    Dar Enter
+}
+
+validarHomePage() {
+    Verificar que se encuentren los siguientes elementos:
+    text: "Mercado Libre México - Donde comprar y vender de todo"
+}
+
+crearCuenta() {
+    Dar click en Crear Cuenta - texto: "Crea tu cuenta"
+    Verificar que se encuentren los siguientes elementos:
+    - name="firstName"
+    - name="lastName"
+    - name="email"
+    - name="password"
+    Ingresar datos de firstName como "Pepe"
+    Ingresar datos de lastName como "Pecas"
+    Ingresar datos de email como "test@tester.com"
+    Ingresar datos de password como "Pa$$w0rd"
+    Dar click en el recuadro del Captcha
+    Dar click en el boton Crear Cuenta
+}
+
+validarCuentaCreada() {
+    Verificar se encuentren los siguientes elementos:
+    class: "nav-header-username"
+}
+

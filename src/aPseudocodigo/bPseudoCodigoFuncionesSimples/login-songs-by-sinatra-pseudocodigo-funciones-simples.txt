@@ -1,5 +1,5 @@
 navegarURL() {
-    URL: http://evening-bastion-49392.herokuapp.com/
+    URL: http://www.mercadolibre.com.mx/
     Browser: Chrome
     Abrir el navegador
     Ingresar la URL
