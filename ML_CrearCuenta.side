@@ -1,0 +1,329 @@
+{
+  "id": "4b75de59-35bb-4266-9560-d0621ebab02c",
+  "version": "2.0",
+  "name": "ML_CrearCuenta",
+  "url": "https://www.mercadolibre.com.mx/",
+  "tests": [{
+    "id": "790164a9-7a4d-4536-ac31-d4f7f471a3bf",
+    "name": "CrearCuenta",
+    "commands": [{
+      "id": "48758df9-79db-4575-b7b6-4282d4493951",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.mercadolibre.com.mx/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e795868-608e-441a-982c-845ba76cc138",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[@class=\"nav-logo\"]",
+      "targets": [
+        ["linkText=Mercado Libre México - Donde comprar y vender de todo", "linkText"],
+        ["css=.nav-logo", "css:finder"],
+        ["xpath=//a[contains(text(),'Mercado Libre México - Donde comprar y vender de todo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '//www.mercadolibre.com.mx')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mercado Libre México - Donde comprar y vender de todo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1313360c-216c-4ad6-a781-7b54ad37d2a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crea tu cuenta",
+      "targets": [
+        ["linkText=Crea tu cuenta", "linkText"],
+        ["css=#nav-header-menu > a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Crea tu cuenta')])[2]", "xpath:link"],
+        ["xpath=//nav[@id='nav-header-menu']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.mercadolibre.com.mx/registration?confirmation_url=https%3A%2F%2Fwww.mercadolibre.com.mx%2F%3Fdeal_id%3DMLM2210#nav-header')]", "xpath:href"],
+        ["xpath=//nav[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de6189ef-b47a-4628-b6a1-de712ebc5dbb",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=firstName",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db39238f-aff2-4695-b729-17cb97cff4ef",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//main[@id='root-app']/div/div/form/div/div/label/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Pepe"
+    }, {
+      "id": "f671fccd-3df3-4589-9e6c-2abe2087ad15",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//main[@id='root-app']/div/div/form/div/div[2]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label/div/input", "xpath:position"]
+      ],
+      "value": "Pecas"
+    }, {
+      "id": "e44c0662-4d3b-48fb-b0e6-902dc0b9d1cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//main[@id='root-app']/div/div/form/div/div[3]/div/div/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/label/div/input", "xpath:position"]
+      ],
+      "value": "teste@test.com"
+    }, {
+      "id": "e517d95a-7ee3-4037-857e-6d333a48ee44",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//main[@id='root-app']/div/div/form/div/div[3]/div[2]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/label/div/input", "xpath:position"]
+      ],
+      "value": "Pa$$sw0rd"
+    }, {
+      "id": "22535050-daee-47cf-8656-6c7d3fe7e382",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=6",
+      "targets": [
+        ["index=6"]
+      ],
+      "value": ""
+    }, {
+      "id": "4374b7a9-6d70-4a5b-a3d6-45b366af97a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f914e5fa-711c-42f1-b9ac-bb258be334a2",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "07fb6e37-9628-49d5-882c-4b8ec4b90a58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-button__content",
+      "targets": [
+        ["css=.andes-button__content", "css:finder"],
+        ["xpath=//main[@id='root-app']/div/div/form/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Crear cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a20b629d-8ea9-4aae-9cf7-e301eb193f57",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Mercado Libre México - Donde comprar y vender de todo",
+      "targets": [
+        ["linkText=Mercado Libre México - Donde comprar y vender de todo", "linkText"],
+        ["css=.nav-logo", "css:finder"],
+        ["xpath=//a[contains(text(),'Mercado Libre México - Donde comprar y vender de todo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '//www.mercadolibre.com.mx')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mercado Libre México - Donde comprar y vender de todo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fc6c2b6-4c06-4136-9f4a-6073811cff99",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.nav-header-username",
+      "targets": [
+        ["css=.nav-header-username", "css:finder"],
+        ["xpath=//nav[@id='nav-header-menu']/div/label/a/span/span[2]", "xpath:idRelative"],
+        ["xpath=//span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "921863e9-41de-4ab0-8d49-8efb6c04b775",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Salir",
+      "targets": [
+        ["linkText=Salir", "linkText"],
+        ["css=a:nth-child(12)", "css:finder"],
+        ["xpath=//a[contains(text(),'Salir')]", "xpath:link"],
+        ["xpath=//nav[@id='nav-header-menu']/div/nav/div/div[2]/a[8]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.mercadolibre.com/jms/mlm/lgz/logout?go=https://www.mercadolibre.com.mx#menu-user')]", "xpath:href"],
+        ["xpath=//a[8]", "xpath:position"],
+        ["xpath=//a[contains(.,'Salir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d77b7122-894a-4d98-9661-b1e9bcbdb7d5",
+    "name": "Test",
+    "commands": [{
+      "id": "b4260dbc-4178-4866-8fd8-b600892e78f4",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.mercadolibre.com.mx/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f9da0a6-949c-498e-ab0c-9c169011f075",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1066",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b02b8f75-10f8-4696-afd6-227c72c35504",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crea tu cuenta",
+      "targets": [
+        ["linkText=Crea tu cuenta", "linkText"],
+        ["css=#nav-header-menu > a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Crea tu cuenta')])[2]", "xpath:link"],
+        ["xpath=//nav[@id='nav-header-menu']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.mercadolibre.com.mx/registration?confirmation_url=https%3A%2F%2Fwww.mercadolibre.com.mx%2F%3Fdeal_id%3DMLM2210#nav-header')]", "xpath:href"],
+        ["xpath=//nav[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9042929-1857-418d-93c7-057c47d55b83",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//main[@id='root-app']/div/div/form/div/div/label/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Tester"
+    }, {
+      "id": "40364c8c-6ece-4a06-8050-c10d12abcf48",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//main[@id='root-app']/div/div/form/div/div[2]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label/div/input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "545e2c3f-2940-4dc4-a84f-7c15c4a23a1f",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//main[@id='root-app']/div/div/form/div/div[3]/div/div/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/label/div/input", "xpath:position"]
+      ],
+      "value": "test@test.com"
+    }, {
+      "id": "55b9e781-79a3-47f1-bed5-fc871f4ae717",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//main[@id='root-app']/div/div/form/div/div[3]/div[2]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/label/div/input", "xpath:position"]
+      ],
+      "value": "Pa$$w0rd"
+    }, {
+      "id": "9dba81c0-534a-4e5e-903a-99a53b22a2fd",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=5",
+      "targets": [
+        ["index=5"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd4d2b28-8590-4add-b919-f4b554e1f1aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1d4db87-18ec-4af6-bfea-bbd258cf2343",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "033f612c-c061-49af-8091-7aa35b31140a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-button__content",
+      "targets": [
+        ["css=.andes-button__content", "css:finder"],
+        ["xpath=//main[@id='root-app']/div/div/form/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Crear cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e02ee7da-429c-4a7b-b022-52ee4a7c32aa",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["790164a9-7a4d-4536-ac31-d4f7f471a3bf"]
+  }],
+  "urls": ["https://www.mercadolibre.com.mx/"],
+  "plugins": []
+}
